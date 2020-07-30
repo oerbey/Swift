@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MainVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController wantsFullScreenLayout="YES" id="BYZ-38-t0r" customClass="MainVC" customModule="ImperialConverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dark Road " translatesAutoresizingMaskIntoConstraints="NO" id="2e0-Jc-ZgH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Miles" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5tJ-hp-eFt" customClass="distanceTxtField" customModule="ImperialConverter" customModuleProvider="target">
+                                <rect key="frame" x="50" y="130" width="275" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Kilometers" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p44-fb-EfN" customClass="distanceTxtField" customModule="ImperialConverter" customModuleProvider="target">
+                                <rect key="frame" x="50" y="209" width="275" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xh9-CE-34b">
+                                <rect key="frame" x="50" y="267" width="275" height="63"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWo-ma-Fkt">
+                                <rect key="frame" x="50" y="607" width="275" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bjN-RE-W1r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Clear Calculator">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ClearCalc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lQp-g2-tNn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KM/Miles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Llp-Oc-8oe">
+                                <rect key="frame" x="152" y="340" width="71" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="71" id="Ap1-FU-3Xw"/>
+                                    <constraint firstAttribute="height" constant="21" id="rnz-zk-RQI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Pound" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2fA-Gg-Xal" customClass="distanceTxtField" customModule="ImperialConverter" customModuleProvider="target">
+                                <rect key="frame" x="50" y="380" width="275" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Kilogram" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RNC-Jm-4Q3" customClass="distanceTxtField" customModule="ImperialConverter" customModuleProvider="target">
+                                <rect key="frame" x="50" y="459" width="275" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="p44-fb-EfN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="0Vf-On-F3x"/>
+                            <constraint firstItem="Xh9-CE-34b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1YL-Qk-pqS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2fA-Gg-Xal" secondAttribute="trailing" constant="50" id="2ce-at-CjW"/>
+                            <constraint firstItem="2fA-Gg-Xal" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Lm-Je-qx6"/>
+                            <constraint firstItem="2e0-Jc-ZgH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7fv-aF-2ZJ"/>
+                            <constraint firstItem="2e0-Jc-ZgH" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="8EG-vW-5mm"/>
+                            <constraint firstItem="RNC-Jm-4Q3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="A4P-L1-d0u"/>
+                            <constraint firstItem="2e0-Jc-ZgH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="BMt-YR-09d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2fA-Gg-Xal" secondAttribute="trailing" constant="50" id="BkX-aG-b9Y"/>
+                            <constraint firstItem="RNC-Jm-4Q3" firstAttribute="width" secondItem="2fA-Gg-Xal" secondAttribute="width" id="GXK-0n-yNr"/>
+                            <constraint firstItem="p44-fb-EfN" firstAttribute="width" secondItem="5tJ-hp-eFt" secondAttribute="width" id="HAM-6s-0Fj"/>
+                            <constraint firstItem="Llp-Oc-8oe" firstAttribute="top" secondItem="Xh9-CE-34b" secondAttribute="bottom" constant="10" id="M0G-xS-zoV"/>
+                            <constraint firstItem="Llp-Oc-8oe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mhf-yY-rd8"/>
+                            <constraint firstItem="2fA-Gg-Xal" firstAttribute="top" secondItem="Llp-Oc-8oe" secondAttribute="bottom" constant="19" id="Mu0-wk-lA3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UWo-ma-Fkt" secondAttribute="bottom" constant="30" id="OJ4-zy-3vK"/>
+                            <constraint firstItem="2e0-Jc-ZgH" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="P0A-FT-d6T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p44-fb-EfN" secondAttribute="trailing" constant="50" id="PSx-oE-wXN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UWo-ma-Fkt" secondAttribute="trailing" constant="50" id="QhN-ng-Pau"/>
+                            <constraint firstItem="2e0-Jc-ZgH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Rxt-1s-Nzm"/>
+                            <constraint firstItem="RNC-Jm-4Q3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SmQ-AH-Frz"/>
+                            <constraint firstItem="RNC-Jm-4Q3" firstAttribute="top" secondItem="2fA-Gg-Xal" secondAttribute="bottom" constant="45" id="WyA-Xx-R0g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RNC-Jm-4Q3" secondAttribute="trailing" constant="50" id="ZSm-Sh-xa0"/>
+                            <constraint firstItem="2e0-Jc-ZgH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aV1-tp-6cc"/>
+                            <constraint firstItem="5tJ-hp-eFt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="arb-ZJ-tT3"/>
+                            <constraint firstItem="p44-fb-EfN" firstAttribute="top" secondItem="5tJ-hp-eFt" secondAttribute="bottom" constant="45" id="b3I-d9-XYS"/>
+                            <constraint firstItem="2e0-Jc-ZgH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="c3a-8c-zzY"/>
+                            <constraint firstItem="2fA-Gg-Xal" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="h37-Cq-Azr"/>
+                            <constraint firstItem="Xh9-CE-34b" firstAttribute="top" secondItem="p44-fb-EfN" secondAttribute="bottom" constant="24" id="kgF-sK-skW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5tJ-hp-eFt" secondAttribute="trailing" constant="50" id="nQ4-aV-rvN"/>
+                            <constraint firstItem="UWo-ma-Fkt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="oGW-hZ-ujT"/>
+                            <constraint firstItem="2e0-Jc-ZgH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pKy-ER-tDO"/>
+                            <constraint firstItem="2fA-Gg-Xal" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="pab-Sc-uRb"/>
+                            <constraint firstItem="2e0-Jc-ZgH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rHm-80-S1S"/>
+                            <constraint firstItem="2e0-Jc-ZgH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sbq-ds-JzF"/>
+                            <constraint firstItem="2e0-Jc-ZgH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tWK-rb-sUJ"/>
+                            <constraint firstItem="5tJ-hp-eFt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="130" id="usd-f5-fod"/>
+                            <constraint firstItem="Xh9-CE-34b" firstAttribute="width" secondItem="p44-fb-EfN" secondAttribute="width" id="wMl-ET-Kmk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="TypeLbl" destination="Llp-Oc-8oe" id="sFb-XG-2i0"/>
+                        <outlet property="distanceResultLbl" destination="Xh9-CE-34b" id="Muq-nd-FBX"/>
+                        <outlet property="kgTxt" destination="RNC-Jm-4Q3" id="cWb-MG-cS3"/>
+                        <outlet property="kmsTxt" destination="p44-fb-EfN" id="Av0-vB-OoJ"/>
+                        <outlet property="milesTxt" destination="5tJ-hp-eFt" id="RuQ-zV-Wu2"/>
+                        <outlet property="poundTxt" destination="2fA-Gg-Xal" id="dpg-Oe-MKE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Dark Road " width="960" height="540"/>
+    </resources>
+</document>
